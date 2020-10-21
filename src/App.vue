@@ -13,13 +13,17 @@
           <li class="nav-item">
             <button class="navbar-brand" href="/signup" v-if="!isLoggedIn()" ><router-link to="/signup">Signup</router-link></button>
           </li>
-          <hr>
+          <br>
           <li class="nav-item">
             <button class="navbar-brand" href="/login" v-if="!isLoggedIn()" ><router-link to="/login">login</router-link></button>
           </li>
           <li class="nav-item">
             <button class="navbar-brand" href="/logout" v-if="isLoggedIn()" ><router-link v-if="isLoggedIn()" to="/logout">Logout</router-link></button>
           </li>
+          <li class="nav-item">
+            <button class="navbar-brand" href="/recipes" v-if="isLoggedIn()" ><router-link v-if="isLoggedIn()" to="/recipes">Recipes</router-link></button>
+          </li>
+          <br>
           <li class="nav-item">
             <button class="navbar-brand" href="/recipes/new" v-if="isLoggedIn()" ><router-link v-if="isLoggedIn()" to="/recipes/new">New Recipe</router-link></button>
           </li>
