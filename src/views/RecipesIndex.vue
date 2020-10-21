@@ -1,19 +1,44 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div v-for="recipe in recipes" class="post-preview">
+          <a v-bind:href="`/recipes/${recipe.id}`">
+            <h2 class="post-title">
+              {{ recipe.title }}
+            </h2>
+            <h3 class="post-subtitle">
+              {{  recipe.directions }}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">{{ recipe.chef }}</a>
+            on {{ recipe.created_at }}</p>      
+          <hr>
+        </div>
+      
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+    <!-- <h1>{{ message }}</h1>
 
     <input type="text" v-model="searchTerm" list="titles">
 
     <datalist id="titles">
       <option v-for="recipe in recipes">{{ recipe.title }}</option>
-    </datalist>    
+    </datalist>     -->
 
-      <div v-for="recipe in orderBy(recipes, 'directions')">
+      <!-- <div v-for="recipe in orderBy(recipes, 'directions')">
 
       <h3><a v-bind:href="`/recipes/${recipe.id}`">{{ recipe.title }}</a></h3>
       <p>{{ recipe.directions | uppercase }}</p>
       <hr>
-    </div>
+    </div> -->
   </div>
 </template>
 
