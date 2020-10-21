@@ -24,6 +24,10 @@
         <h4>Prep Time:</h4> {{ recipe.prep_time }} 
          <h4>Directions:</h4> {{ recipe.directions }} 
          <h4>Image:</h4> {{ recipe.image_url }}
+         
+    <div v-if="recipe.user_id == $parent.getUserId()">
+      <a v-bind:href="`/recipes/${recipe.id}/edit`">Edit this item</a>
+    <p><button v-on:click="deleteRecipe()">Delete the recipe</button></p> </div>
 
       </div>
     </div>
@@ -38,16 +42,8 @@
     <img v-bind:src="recipe.image_url">
 
     <p>recipe.user_id {{recipe.user_id}}</p>
-    <p>current user's id {{ $parent.getUserId() }}</p>
+    <p>current user's id {{ $parent.getUserId() }}</p> -->
 
-    <div v-if="recipe.user_id == $parent.getUserId()">
-
-      <a v-bind:href="`/recipes/${recipe.id}/edit`">Edit this item</a>
-
-
-
-
-    <p><button v-on:click="deleteRecipe()">Delete the recipe</button></p> -->
 
 
 
