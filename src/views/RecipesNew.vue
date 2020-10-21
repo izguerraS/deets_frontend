@@ -7,23 +7,23 @@
       </ul>
       <div class="form-group">
         <label>Title:</label> 
-        <input type="text" class="form-control" v-model="title">
+        <input type="text" class="form-control" placeholder="Title" required data-validation-required-message="Please enter a title." v-model="title">
       </div>
       <div class="form-group">
         <label>Ingredients:</label> 
-        <input type="text" class="form-control" v-model="ingredients">
+        <textarea rows="5" class="form-control" placeholder="Ingredients" required data-validation-required-message="Please enter ingredients." v-model="ingredients"></textarea>
       </div>
       <div class="form-group">
         <label>Directions:</label>
-        <input type="text" class="form-control" v-model="directions">
+        <textarea rows="5" class="form-control" placeholder="Directions" required data-validation-required-message="Please enter directions." v-model="directions"></textarea>
       </div>
       <div class="form-group">
         <label>Prep Time:</label>
-        <input type="text" class="form-control" v-model="prepTime">
+        <input type="text" class="form-control" placeholder="Prep Time" required data-validation-required-message="Please enter a prep time." v-model="prepTime">
       </div>
       <div class="form-group">
         <label>Image Url:</label>
-        <input type="text" class="form-control" v-model="imageUrl">
+        <input type="text" class="form-control" placeholder="Image" required data-validation-required-message="Please enter an image." v-model="imageUrl">
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
