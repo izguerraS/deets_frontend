@@ -1,22 +1,34 @@
+
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <h1>title: {{ recipe.title }}</h1>
+    <h1>title: {{ recipe.user_id }}</h1>
     <h1>ingredients: {{ recipe.ingredients }}</h1>
     <h1>prep_time: {{ recipe.prep_time }}</h1>
 
     <img v-bind:src="recipe.image_url">
 
-    <a v-bind:href="`/recipes/${recipe.id}/edit`">Edit this item</a>
+    <p>recipe.user_id {{recipe.user_id}}</p>
+    <p>current user's id {{ $parent.getUserId() }}</p>
+    
+    <div v-if="recipe.user_id == $parent.getUserId()">
+
+      <a v-bind:href="`/recipes/${recipe.id}/edit`">Edit this item</a>
+
+
+
+
     <p><button v-on:click="deleteRecipe()">Delete the recipe</button></p>
 
 
+
+
+    </div>
+
   </div>
 </template>
-
 <style>
 </style>
-
 <script>
 import axios from "axios";
 export default {
@@ -48,5 +60,4 @@ export default {
     }
   }
 };
-
 </script>
