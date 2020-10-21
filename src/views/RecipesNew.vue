@@ -1,5 +1,19 @@
 <template>
   <div class="recipes-new">
+      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>New Recipe</h1>
+            <span class="subheading">
+               Share Your Latest/Greatest Dish! </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
     <form v-on:submit.prevent="submit()">
       <h1>Make a new recipe</h1>
       <ul>

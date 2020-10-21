@@ -1,12 +1,25 @@
 
 <template>
   <div class="home">
+      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{ recipe.title }}</h1>
+            <span class="subheading">
+               Created by: {{ recipe.chef}} </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h3> Title:</h3> {{ recipe.title }} 
         <h4>Ingredients:</h4> {{ recipe.ingredients }} 
         <h4>Prep Time:</h4> {{ recipe.prep_time }} 
          <h4>Directions:</h4> {{ recipe.directions }} 

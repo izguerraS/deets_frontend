@@ -34,7 +34,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+  <!-- <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
 
 
   <router-view/>
