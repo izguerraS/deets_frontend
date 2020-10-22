@@ -20,9 +20,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-       <p> <h4>Ingredients:</h4> {{ recipe.ingredients }} </p>
-       <p> <h4>Prep Time:</h4> {{ recipe.prep_time }} </p>
-         <p> <h4>Directions:</h4> {{ recipe.directions }} </p>
+       <p> <h4>Ingredients:</h4> {{ recipe.ingredients }} 
+       <p> <h4>Prep Time:</h4> {{ recipe.prep_time }} 
+         <p> <h4>Directions:</h4> {{ recipe.directions }} 
          <!-- <h4>Image:</h4> {{ recipe.image_url }} -->
 
          <p><img v-bind:src="recipe.image_url"></p>
