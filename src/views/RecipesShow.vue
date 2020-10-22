@@ -20,11 +20,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <h4>Ingredients:</h4> {{ recipe.ingredients }} 
-        <h4>Prep Time:</h4> {{ recipe.prep_time }} 
-         <h4>Directions:</h4> {{ recipe.directions }} 
-         <h4>Image:</h4> {{ recipe.image_url }}
-         
+       <p> <h4>Ingredients:</h4> {{ recipe.ingredients }} </p>
+       <p> <h4>Prep Time:</h4> {{ recipe.prep_time }} </p>
+         <p> <h4>Directions:</h4> {{ recipe.directions }} </p>
+         <!-- <h4>Image:</h4> {{ recipe.image_url }} -->
+
+         <p><img v-bind:src="recipe.image_url"></p>
+
     <div v-if="recipe.user_id == $parent.getUserId()">
       <a v-bind:href="`/recipes/${recipe.id}/edit`">Edit this item</a>
     <p><button v-on:click="deleteRecipe()">Delete the recipe</button></p> </div>
@@ -39,10 +41,10 @@
     <h1>ingredients: {{ recipe.ingredients }}</h1>
     <h1>prep_time: {{ recipe.prep_time }}</h1>
 
-    <img v-bind:src="recipe.image_url">
+    <img v-bind:src="recipe.image_url"> -->
 
-    <p>recipe.user_id {{recipe.user_id}}</p>
-    <p>current user's id {{ $parent.getUserId() }}</p> -->
+    <!-- <p>recipe.user_id {{recipe.user_id}}</p>
+    <p>current user's id {{ $parent.getUserId() }}</p> --> 
 
 
 
