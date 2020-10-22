@@ -37,7 +37,7 @@
       </div>
       <div class="form-group">
         <label>Image Url:</label>
-        <input type="text" class="form-control" placeholder="Image" required data-validation-required-message="Please enter an image." v-model="imageUrl">
+        <input type="text" class="form-control" placeholder="example: http://www.recipes.com/image" required data-validation-required-message="Please enter an image." v-model="imageUrl">
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
