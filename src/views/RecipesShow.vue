@@ -1,7 +1,7 @@
 
 <template>
   <div class="home">
-      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+      <header class="masthead" style="background-image: url('/img/empty_plate.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -9,7 +9,7 @@
           <div class="site-heading">
             <h1>{{ recipe.title }}</h1>
             <span class="subheading">
-               Created by: {{ recipe.chef}} </span>
+               Created by: {{ recipe.chef }} </span>
           </div>
         </div>
       </div>

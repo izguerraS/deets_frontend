@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+      <header class="masthead" style="background-image: url('/img/full_table.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Recipes</h1>
+            <h1>All Recipes</h1>
             <span class="subheading">
-               A Collection of Family Recipes </span>
+               The Collection of Family Recipes </span>
           </div>
         </div>
       </div>

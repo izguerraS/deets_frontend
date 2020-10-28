@@ -1,6 +1,6 @@
 <template>
   <div class="recipes-new">
-      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+      <header class="masthead" style="background-image: url('/img/messy_kitchen.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">

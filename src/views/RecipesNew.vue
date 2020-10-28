@@ -1,6 +1,6 @@
 <template>
   <div class="recipes-new">
-      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+      <header class="masthead" style="background-image: url('/img/bb_create.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -35,9 +35,9 @@
         <label>Prep Time:</label>
         <input type="text" class="form-control" placeholder="Prep Time" required data-validation-required-message="Please enter a prep time." v-model="prepTime">
       </div>
-      <div class="form-group">
+      <div class="form-group" form action="/action_page.php">
         <label>Image Url:</label>
-        <input type="text" class="form-control" placeholder="example: http://www.recipes.com/image" required data-validation-required-message="Please enter an image." v-model="imageUrl">
+        <input type="text" class="form-control" placeholder="example: http://www.recipes.com/image"  v-model="imageUrl">
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>

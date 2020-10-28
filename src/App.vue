@@ -15,7 +15,7 @@
           </li>
           <br>
           <li class="nav-item">
-            <button class="navbar-brand" href="/login" v-if="!isLoggedIn()" ><router-link to="/login">login</router-link></button>
+            <button class="navbar-brand" href="/login" v-if="!isLoggedIn()" ><router-link to="/login">Log-in</router-link></button>
           </li>
           <li class="nav-item">
             <button class="navbar-brand" href="/recipes" v-if="isLoggedIn()" ><router-link v-if="isLoggedIn()" to="/recipes">All Recipes</router-link></button>

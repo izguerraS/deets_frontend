@@ -8,6 +8,7 @@ import RecipesIndex from "../views/RecipesIndex.vue";
 import RecipesNew from "../views/RecipesNew.vue";
 import RecipesShow from "../views/RecipesShow.vue";
 import RecipesEdit from "../views/RecipesEdit.vue";
+import Welcome from "../views/Welcome.vue";
 
 
 
@@ -49,6 +50,11 @@ const routes = [
     path: "/login", 
     name: "login", 
     component: Login 
+  },
+  { 
+    path: "/welcome", 
+    name: "welcome", 
+    component: Welcome 
   },
   { 
     path: "/logout", 

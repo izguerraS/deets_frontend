@@ -1,14 +1,14 @@
 <template>
   <div class="login">
-      <header class="masthead" style="background-image: url('/img/Mexican_food.jpg')">
+      <header class="masthead" style="background-image: url('/img/open_door2.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>The Cookbook</h1>
+            <h1>Log-In</h1>
             <span class="subheading">
-               Digital Cookbook to Share Our Family's Favorite Recipes. </span>
+               Please Login or Signup For More Information </span>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default {
             "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
           localStorage.setItem("user_id", response.data.user_id);
-          this.$router.push("/");
+          this.$router.push("/welcome");
         })
         .catch(error => {
           this.errors = ["Invalid email or password."];
